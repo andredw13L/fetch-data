@@ -5,7 +5,7 @@ const Component: React.FC = () => {
     const [todos, setTodos] = useState<Todo[]>([]);
 
     useEffect(() => {
-        fetch('localhost:5000/todos', {
+        fetch('http://localhost:5000/todos', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
